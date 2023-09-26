@@ -28,8 +28,8 @@ public class ScreenshotHelper {
                     .shootingStrategy(ShootingStrategies.viewportPasting(
                             ShootingStrategies.scaling(JavaScriptHelper.getPageSize()), 100))
                     .takeScreenshot(screener);
-            ImageIO.write(screenshot.getImage(), "png", new File("temp\\" + screenName));
-            logger.info("Скриншот сохранен в файле [temp\\" + screenName);
+            ImageIO.write(screenshot.getImage(), "png", new File("temp\\" + screenName + ".png"));
+            logger.info("Скриншот сохранен [temp\\" + screenName);
         } catch (
                 IOException e) {
             e.printStackTrace();

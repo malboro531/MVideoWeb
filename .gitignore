@@ -5,3 +5,5 @@ target/
 test-report/
 *.iml
 *.log
+/temp
+*.json
