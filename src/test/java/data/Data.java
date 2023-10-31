@@ -19,10 +19,10 @@ public class Data {
         expectedPopularSubcategories.add("Холодильники и морозильные камеры");
         expectedPopularSubcategories.add("Обогреватели");
         expectedPopularSubcategories.add("Стиральные и сушильные машины");
-        expectedPopularSubcategories.add("Планшеты");
+        expectedPopularSubcategories.add("Складные смартфоны");
         expectedPopularSubcategories.add("Кухонная мебель");
         expectedPopularSubcategories.add("Умные колонки");
-        expectedPopularSubcategories.add("Пылесосы");
+        expectedPopularSubcategories.add("Планшеты");
         return expectedPopularSubcategories;
     }
 }

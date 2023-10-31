@@ -8,6 +8,8 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.WebDriver;
 
+import java.time.Duration;
+
 public class BaseTest {
     protected static WebDriver driver;
     private Logger logger = LogManager.getLogger(BaseTest.class);
@@ -18,6 +20,7 @@ public class BaseTest {
                 .getProperty("browser", "chrome")
                 .toLowerCase();
         driver = WebDriverFactory.getDriver(BrowserName.fromString(browser));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         logger.info("Драйвер стартовал!");
     }
 

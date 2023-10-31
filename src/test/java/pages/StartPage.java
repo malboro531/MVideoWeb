@@ -28,7 +28,7 @@ public class StartPage extends BasePage {
     @FindBy(xpath = "//mvid-plaintext-ellipsis[text()='Смартфоны ']")
     private WebElement smartphonesPopularLink;
     // Популярные категории
-    @FindBy(xpath = "//mvid-plaintext-ellipsis[contains(@class, 'popular-categories__item-name')]")
+    @FindBy(xpath = "//div[contains(@class, 'popular-categories__item-name')]")
     private List<WebElement> popularCategories;
     // Наши преимущества
     @FindBy(xpath = "//p[@class='carousel-block-text']")
